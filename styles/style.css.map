@@ -5,8 +5,7 @@
         "style.scss",
         "_colors.scss",
         "_fonts.scss",
-        "_text.scss",
-        "_colors.scss"
+        "_text.scss"
     ],
     "names": [],
     "file": "style.css"
