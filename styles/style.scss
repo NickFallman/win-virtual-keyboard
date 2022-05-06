@@ -1,0 +1,214 @@
+@import "colors";
+@import "fonts";
+@import "text";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px; 
+}
+
+body {
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.section-wrapper {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+  // position: relative;
+  // border: 1px solid yellow;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  position: relative;
+  top: 60px;
+  flex-wrap: wrap;
+  // border: 1px solid yellowgreen;
+}  
+
+.logo-main {
+  display: flex;
+  flex-direction: column;
+  // align-items: left;
+  justify-content: space-between;
+  height: 60px;
+  padding-top: 1px;
+  &:hover {
+    background: $color-primary-transp; 
+  }
+  &:focus {
+    background: $color-primary-transp;
+    outline: none;
+  }
+  .logo__title {
+    color: $color-primary;
+    margin: 0px;
+    transition: 0.3s;
+  }
+  .logo__subtitle {
+    color: $color-light-xl;
+    text-align: center;
+    padding-left: 3px;
+    // margin: 0 0 0 3px;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  // border: 1px solid yellowgreen;
+  // height: 60px;
+  min-width: 443px;
+  // min-width: 35%;
+  padding-bottom: 2px;
+  // padding-top: 1px;
+  align-items: center;
+  justify-content: space-between;
+  &__item {
+    // display: block;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+    &:hover {
+      color: $color-light-s ;  /*rgba(250, 250, 250, 1)*/
+      border-color: $color-primary; /*rgba(241, 205, 179, 1)*/
+      background: $color-primary-transp ;
+    }
+    &:focus {
+      color: $color-light-s ;  /*rgba(250, 250, 250, 1)*/
+      border-color: $color-primary;
+      outline: none;
+    }
+  }
+  // &__item_active {
+  //   color: $color-light-s ;  /*rgba(250, 250, 250, 1)*/
+  //   border-color: $color-primary;
+  // }
+}
+
+.start-screen {
+  width: auto;
+  min-height: 908px;
+  position: relative;
+  &_gradient-bg {
+    background: 
+      url( ../../assets/images/noise_lines_transparent@2X.png ), 
+      radial-gradient(100% 215.42% at 0% 0%, $clr-gradi-start 0%, $clr-gradi-end 100%), 
+      $clr-gradi-bg;  /* #211F20 */
+  }
+  // border: 1px solid yellowgreen;
+}
+
+.start-screen-box {
+  display: flex ;
+  justify-content: space-between;
+  // flex-wrap: wrap;
+  margin-top: 120px;
+}
+
+.start-screen__img {
+  align-self: flex-end;
+  max-width: 698px;
+  width: 58.17vw;
+  height: 728px;
+  
+  background: url(../../assets/images/start-screen-puppy.png);
+  background-size: cover;
+  // border: 1px solid green;
+}
+
+.start-screen__content {
+  display: flex ;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 460px;
+  width: 38.3vw;
+  height: 322px;
+  min-height: 322px;
+  margin-top: 163px;
+  h2 {
+    // margin-top: 1px;
+    color: $color-light-xl;
+    padding-top: 1px;
+  }
+  p {
+    margin-top: -1px;
+    color: $color-dark-s;
+  }
+}
+
+.button_primary {
+  display: block;
+  width: 207px;
+  height: 52px;
+  border-radius: 100px;
+
+  font-family: 'Georgia', Times, serif ;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  color: $color-dark-3xl;
+  background: $color-primary;
+  border: 2px solid $color-primary;
+}
+
+.about {
+  width: auto;
+  min-height: 588px;
+  // position: relative;
+  background: $color-light-xl;
+}
+
+.about-content {
+  display: flex ;
+  justify-content: space-between ;
+  align-items: center;
+
+  min-height: 408px;
+  padding: 0 175px;
+  margin-top: 80px;
+  // border: 1px solid yellowgreen;
+}
+
+.about-content__about-pets {
+  width: 300px;
+  min-height: 408px;
+  // color: inherit;
+  background: url(../../assets/images/about-cat-dog.png);
+  background-size: cover;
+  // border: 1px solid green;
+}
+
+.about-content__content {
+  display: flex ;
+  flex-direction: column;
+  justify-content: space-between ;
+
+  width: 430px;
+  height: 380px;
+  // padding-top: 1px;
+  color: $color-dark-xl;
+  // border: 1px solid green;
+  h3 {
+    color: inherit;
+  }
+  p {
+    color: inherit;
+  }
+}
