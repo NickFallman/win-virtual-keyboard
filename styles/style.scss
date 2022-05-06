@@ -1,0 +1,27 @@
+@import "colors";
+@import "fonts";
+@import "text";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px; 
+}
+
+body {
+  font-family: 'Rubik', Helvetica, sans-serif;
+  font-size: 40px;
+  // color: $color-dark-3xl;
+  color: black ;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
