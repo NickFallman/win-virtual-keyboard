@@ -1,12 +1,11 @@
 @import "colors";
 
-h2, h3, .h3-mobile, h4, h5, .h5-modal-window, .logo__title, 
-.logo__subtitle, .paragraph-l, .paragraph-s, .paragraph-mobile-menu {
+h2, h3, h4, h5, .logo__title {
   color: $clr-txt;
 }
 
-h2, h3, .h3-mobile, h4, h5, .h5-modal-window, .logo__title {
-  font-family: 'Georgia', Times, serif ;
+h2, h3, h4, h5, .logo__title {
+  font-family: 'Rubik', Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
 } 
@@ -19,64 +18,5 @@ h2 {
 h3 {
   font-size: 35px; // 35px
   line-height: 130%;  /* or 45px */
-  letter-spacing: 0.06em;
-}
-
-.h3-mobile {
-  font-size: 25px;
-  line-height: 130%;  /* or 32px */
-  letter-spacing: 0.06em;
-}
-
-h4 {
-  font-size: 20px;
-  line-height: 115%;  /* identical to box height, or 23px */
-  letter-spacing: 0.06em;
-}
-
-h5 {
-  font-size: 15px;
-  line-height: 110%;  /* identical to box height, or 17px */
-  letter-spacing: 0.06em;
-}
-
-.h5-modal-window {
-  font-size: 15px;
-  line-height: 110%;  /* identical to box height, or 17px */
-  letter-spacing: 0.06em;
-}
-
-.logo__title {
-  font-size: 3.2rem;
-  line-height: 110%;  /* identical to box height, or 35px */
-  letter-spacing: 0.06em;
-}
-
-.logo__subtitle, .paragraph-l, .paragraph-s, .paragraph-mobile-menu {
-  font-family: 'Arial', Helvetica, sans-serif;
-}
-
-.logo__subtitle {
-  font-size: 1.3rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.1em;
-}
-
-.paragraph-l {
-  font-size: 15px;
-  line-height: 160%;  /* or 24px */
-}
-
-.paragraph-s {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;  /* identical to box height, or 18px */
-}
-
-.paragraph-mobile-menu {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 160%;  /* or 51px */
+  // letter-spacing: 0.06em;
 }
